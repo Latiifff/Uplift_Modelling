@@ -9,11 +9,17 @@ The main objective of this project is to build an uplift model to predict the ef
 
 ## 📈 Develop Uplift Model
 ### Uplift Distribution
+<p align="center">
+  <img src="Uplift%20Distribution.png" alt="Uplift Model Distribution" width="500"/>
+</p>
 The Uplift Distribution shows the probability distribution of the individual treatment effect (ITE) predicted by the Uplift model. The ITE is the difference between the predicted outcome for an individual if they receive the treatment and the predicted outcome if they do not receive the treatment.
 Based on the distributions of these two models, S-Learner and Uplift Tree, both show the majority of ITE is in the positive direction, indicating that the model predicts the treatment will tend to have a positive effect on individual outcomes.
 
 ## 📉 Model Evaluation
 ### Cumulative Gain Plot
+<p align="center">
+  <img src="Cumulative%20Gain%20Plot.png" alt="Cumulative Gain Plot" width="500"/>
+</p>
 The S-Learner Model achieves maximum effectiveness when targeted to approximately 15000 populations, while the Uplift Tree Model achieves maximum effectiveness when targeted to approximately 12000 populations.
 
 ### AUUC and Qini Score
@@ -27,7 +33,7 @@ The S-Learner Model achieves maximum effectiveness when targeted to approximatel
 - In this case, Uplift Tree has a slightly lower Qini Score (0.258296) compared to S-Learner (0.29603).
 - The difference in Qini Score between the two models is also relatively small, but Uplift Tree shows a slightly lower level of uncertainty.
 
-Based on the evaluation results, Uplift Tree performs slightly better in terms of AUUC Score and Qini Score, but the difference is relatively small.
+**_Based on the evaluation results, Uplift Tree performs slightly better in terms of AUUC Score and Qini Score, but the difference is relatively small._**
 
 ## 📜 Conclusion
 This project focused on building an uplift model to optimize Marketing Promotion Campaigns. By analyzing the effectiveness of different models like S-Learner and Uplift Tree, we determined that Uplift Tree slightly outperforms in distinguishing treatment benefits and exhibits lower uncertainty. These insights will guide future marketing strategies to maximize conversions and minimize costs.
